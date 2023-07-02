@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/c55ac3095c.js" crossorigin="anonymous"></script>
+    <title>TaksManager</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="top-nav">
+            <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+
+            <p id="fecha-actual">5 Mayo</p>
+
+            <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block">
+                <i class="fa-solid fa-stopwatch"></i>
+            </button>
+        </div>
+
+        <div class="row" id="options">
+            <div class="col-4" id="text-task">
+                <p id="today">Hoy</p>
+                <p id="task-counter"></p>
+            </div>
+
+            <div class="col-8" id="new-task">
+                <button type="button" name="" id="new-task-button" class="btn btn-primary" btn-lg btn-block">
+                    Agregar tarea
+                </button>
+            </div>
+        </div>
+
+        <div class="col" id="container-task">
+            <div class="row" id="date-top">
+                <label id="day"></label>
+
+                <label id="msj"></label>
+            </div>
+
+            <div class="col" id="task-creator">
+                <input type="text" class="form-control" name="" id="description-task" aria-describedby="helpId" placeholder="Descripción">
+    
+                <label for="start">Inicio</label>
+                <input type="time" name="start" id="start">
+    
+                <label for="end">Termino</label>
+                <input type="time" name="end" id="end">
+    
+                <button type="button" name="" id="save-btn" class="btn btn-primary" btn-lg btn-block">
+                    <i class="fa-solid fa-check"></i> Guardar
+                </button>
+                
+                <button type="button" name="" id="cancel-btn" class="btn btn-primary" btn-lg btn-block">
+                    <i class="fa-solid fa-ban"></i> Cancelar
+                </button>
+            </div>
+
+            <div class="col" id="tasks">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
